@@ -13,5 +13,11 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
+      - name: List files in the repository
+        run: ls -al
+
+      - name: Display Python script content
+        run: cat test_script.py
+
       - name: Run Python script
         run: python test_script.py
